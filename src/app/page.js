@@ -42,7 +42,7 @@ export default function Home() {
 
         {/* Certification Intro */}
         <div className="space-y-4 text-center">
-          <h1 className="text-2xl font-bold text-teal-600">
+          <h1 className="text-4xl font-bold text-teal-600">
             Welcome to the website of A.B.C. Podiatry Office!
           </h1>
           <h2 className="text-lg font-medium text-gray-800">
