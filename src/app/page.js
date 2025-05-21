@@ -7,7 +7,7 @@ export default function Home() {
   const addProduct = () => {
     setProducts((prev) => [
       ...prev,
-      { id: Date.now(), description: `Product ${prev.length + 1}` },
+      { id: Date.now(), description: `First Name, Last Name ${prev.length + 1}` },
     ]);
   };
 
@@ -51,7 +51,7 @@ export default function Home() {
           <h2 className="text-lg font-medium text-gray-800">
             Some of the common conditions we treat include bunions, diabetic foot care, and plantar fascitis.
           </h2>
-          <h2 className="text-lg font-medium text-gray-800">
+          <h2 className="text-lg font-medium text-gray-800 italic">
             We hope to see you soon!
           </h2>
           <h2 className="text-lg font-medium text-gray-800 underline">
@@ -59,17 +59,17 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* Product List */}
+        {/* Name List */}
         <div className="space-y-3" id="display">
-          {products.map((product) => (
+          {products.map((className) => (
             <div
-              key={product.id}
+              key={className.id}
               className="bg-gray-100 border border-gray-300 rounded-lg p-3 shadow-sm"
             >
               <input
                 type="text"
-                value={product.description}
-                onChange={(e) => updateDescription(product.id, e.target.value)}
+                value={className.description}
+                onChange={(e) => updateDescription(className.id, e.target.value)}
                 className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-red-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
