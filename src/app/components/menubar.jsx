@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Menubar() {
+export default function menubar() {
   return (
     <nav className="bg-teal-600 text-white shadow-md">
       <ul className="flex flex-col sm:flex-row justify-center items-center gap-4 py-4 px-6">
